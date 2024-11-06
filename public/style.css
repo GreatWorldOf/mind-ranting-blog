@@ -1,0 +1,78 @@
+/* Rainbow background for body */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background: linear-gradient(135deg, #FF0000, #FF7F00, #FFFF00, #00FF00, #0000FF, #4B0082, #8B00FF);
+    background-size: 1000% 1000%;
+    animation: rainbow-bg 20s ease infinite;
+}
+
+/* Rainbow animation */
+@keyframes rainbow-bg {
+    0%, 100% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+}
+
+/* Header background with dark overlay */
+header, footer {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+/* Rainbow text for main title */
+h1 {
+    font-size: 2.5rem;
+    color: #FFFFFF;
+    background: linear-gradient(to right, #FF0000, #FF7F00, #FFFF00, #00FF00, #0000FF, #4B0082, #8B00FF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: rainbow-text 5s linear infinite;
+}
+
+/* Header styling */
+h2 {
+    color: #FF7F50;
+    margin-top: 1.5rem;
+    text-align: center;
+}
+
+/* Centered text */
+p, ul {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    color: #222;
+}
+
+/* Rainbow-colored links */
+a {
+    color: #FF7F00;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #4B0082;
+    text-decoration: underline;
+}
+
+/* Footer style */
+footer {
+    font-size: 0.9rem;
+    color: #fff;
+}
+
+/* Animation for rainbow-colored text */
+@keyframes rainbow-text {
+    0% { color: #FF0000; }
+    20% { color: #FF7F00; }
+    40% { color: #FFFF00; }
+    60% { color: #00FF00; }
+    80% { color: #0000FF; }
+    100% { color: #8B00FF; }
+}
