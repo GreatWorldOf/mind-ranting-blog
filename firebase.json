@@ -5,6 +5,16 @@
       "firebase.json",
       "**/.*",
       "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "/punca-rambut-gugur",
+        "destination": "/punca-rambut-gugur/index.html"
+      },
+      {
+        "source": "/tanda-air-bersih",
+        "destination": "/tanda-air-bersih/index.html"
+      }
     ]
   }
 }
